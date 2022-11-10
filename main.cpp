@@ -7,6 +7,7 @@ using namespace std;
 int main() {
     //Bici
     Bicicleta biciMTB;
+    cout<<"Valores inciales"<<endl;
     biciMTB.imprimir_datos(); //Con valores por default
     //Modificamos los atributos con los setters
     biciMTB.setTipo("Montaña");
@@ -16,6 +17,7 @@ int main() {
     biciMTB.setPrecio(7600);
     biciMTB.setPeso(10.8);
     //Prueba de getters
+    cout<<"Valores establecidos con setters"<<endl;
     cout<<biciMTB.getPeso()<<endl;
     cout<<biciMTB.getTipo()<<endl;
     cout<<biciMTB.getMarca()<<endl;
@@ -26,6 +28,7 @@ int main() {
 
     //Casco
     Casco miCasco; //creacion objeto constructor por omision
+    cout<<"Valores inciales"<<endl;
     miCasco.imprimir_datos();
     //setters
     miCasco.setTipo("infantil");
@@ -35,6 +38,7 @@ int main() {
     miCasco.setPrecio(2099.6);
     miCasco.setPeso(270);
     //getters
+    cout<<"Valores establecidos con setters"<<endl;
     cout<< miCasco.getTipo()<<endl;
     cout<< miCasco.getMarca()<<endl;
     cout<< miCasco.getColor()<<endl;
@@ -45,6 +49,7 @@ int main() {
 
     //Lampara
     Lampara lamparaPrueba;
+    cout<<"Valores inciales"<<endl;
     lamparaPrueba.imprimir_datos();
     //setters
     lamparaPrueba.setTipo("delantera");
@@ -55,6 +60,7 @@ int main() {
     lamparaPrueba.setTiempo_carga(2);
     lamparaPrueba.setPrecio(455.63);
     //getters
+    cout<<"Valores establecidos con setters"<<endl;
     cout<<lamparaPrueba.getTipo()<<endl;
     cout<< lamparaPrueba.getMarca()<<endl;
     cout<< lamparaPrueba.getColor()<<endl;
@@ -64,5 +70,16 @@ int main() {
     cout<< lamparaPrueba.getPrecio()<<endl;
     lamparaPrueba.imprimir_datos();
 
+    // bici con parametros
+    Bicicleta miBici("ruta", "trek", "azul", 29, 34000, 14.3);
+    miBici.imprimir_datos();
+
+    // casco con parametros
+    Casco cascoWito("ciudad", "gris", 1500, 500);
+    cascoWito.imprimir_datos();
+
+    // lampara con parametros
+    Lampara lamparaRoja("juego", "Focus", "rojo", 6, 3.4, 500, 1200.20);
+    lamparaRoja.imprimir_datos();
     return 0;
 }

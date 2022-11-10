@@ -20,18 +20,17 @@ public:
         precio = 0;
         peso = 0;
     }
-    /*
-    //Constructor con parametros, viene por default la marca principal de la tienda y la talla de estos cascos
-    Casco(string tipo_casco, string color_casco, float precio_casco, float peso_casco){
-        tipo = tipo_casco;
-        marca = "Wito";
-        color = color_casco;
-        talla = "Unitalla";
-        precio = precio_casco;
-        peso = peso_casco;
 
+    //Constructor con parametros, viene por default la marca principal de la tienda y la talla de estos cascos
+    Casco(string tipo_c, string color_c, float precio_c, float peso_c){
+        tipo = tipo_c;
+        marca = "Wito";
+        color = color_c;
+        talla = "Unitalla";
+        precio = precio_c;
+        peso = peso_c;
     }
-     */
+
     //getters
     string getTipo(){
         return tipo;

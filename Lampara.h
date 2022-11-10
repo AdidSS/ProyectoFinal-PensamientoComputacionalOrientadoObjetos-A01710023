@@ -22,6 +22,15 @@ public:
         lumens = 0;
         precio = 0;
     }
+    Lampara(string tipo_lamp, string marca_lamp, string color_lamp, float duracion_lamp, float tiempo_lamp, float lumens_lamp, float precio_lamp){
+        tipo = tipo_lamp;
+        marca = marca_lamp;
+        color = color_lamp;
+        duracion = duracion_lamp;
+        tiempo_carga = tiempo_lamp;
+        lumens = lumens_lamp;
+        precio = precio_lamp;
+    }
     //getters
     string getTipo(){
         return tipo;

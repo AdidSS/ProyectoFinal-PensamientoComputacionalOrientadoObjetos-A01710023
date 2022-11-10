@@ -20,6 +20,14 @@ public:
         precio = 0;
         peso = 0;
     }
+    Bicicleta(string tipo_b, string marca_b, string color_b, float rodada_b, float precio_b,float peso_b){
+        tipo = tipo_b;
+        marca = marca_b;
+        color = color_b;
+        rodada = rodada_b;
+        precio = precio_b;
+        peso = peso_b;
+    }
     //getters
     string getTipo(){
         return tipo;
