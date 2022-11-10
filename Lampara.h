@@ -22,6 +22,7 @@ public:
         lumens = 0;
         precio = 0;
     }
+    //constructor con parametros
     Lampara(string tipo_lamp, string marca_lamp, string color_lamp, float duracion_lamp, float tiempo_lamp, float lumens_lamp, float precio_lamp){
         tipo = tipo_lamp;
         marca = marca_lamp;

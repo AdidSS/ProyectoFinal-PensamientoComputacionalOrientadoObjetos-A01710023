@@ -20,6 +20,7 @@ public:
         precio = 0;
         peso = 0;
     }
+    //constructor con parametros
     Bicicleta(string tipo_b, string marca_b, string color_b, float rodada_b, float precio_b,float peso_b){
         tipo = tipo_b;
         marca = marca_b;
