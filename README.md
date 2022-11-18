@@ -4,3 +4,5 @@ El proyecto atiende las necesidades de las tiendas de bicicletas. Permite crear 
 El programa, en esta entrega, puede crear distintos tipos de objetos, permite cambiar el valor de sus atributos y conocer el valor de estos (a través de los métodos getters y setters) e imprime los datos del objeto deseado.
 El programa esta pensado para que el vendedor o administrador de la tienda sea el usuario. El usuario podrá crear objetos de las distintas clases (Bicicleta, Casco, Lampara), podrá definir los valores de sus atributos como el precio por ejemplo y podrá consultar los datos que tenga cada objeto.
 :)
+
+En este segundo avance se agrega el diagrama de clases UML y se va modificando el codigo para adaptarse al modelado. Se agregan las clases cuadro, pedal y rueda, que conforman a la clase Bicicleta. Se crea la clase Articulo que servirá como clase padre para las primeras 3 clases creadas (bicicleta, casco y lampara).
