@@ -11,6 +11,8 @@ private:
     float tiempo_carga; //horas
     float lumens; //medida de la potencia luminosa
     float precio;
+    //variables
+    bool encendido;
 public:
     //constructor
     Lampara(){
@@ -87,5 +89,13 @@ public:
         cout<<"Tiempo de carga: "<< tiempo_carga <<" horas"<<endl;
         cout<<"Lumens: "<< lumens <<" lumens"<<endl;
         cout<<"Precio: "<< precio <<" pesos"<<endl;
+    }
+    void encender(){
+        encendido = true;
+        cout<<"Encendido";
+    }
+    void apagar(){
+        encendido = false;
+        cout<<"Apagado";
     }
 };

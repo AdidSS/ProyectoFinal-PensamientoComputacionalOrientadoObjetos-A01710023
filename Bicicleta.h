@@ -2,13 +2,16 @@
 #include <string>
 using namespace std;
 class Bicicleta{
-private://Atributos
+private://Atributos estos son heredados pero aun no se aplica la herencia en el codigo
     string tipo;
     string marca;
     string color;
     float rodada;
     float precio;
     float peso;
+    //Atributos propios de clase bici
+    float horquilla;
+    float plato;
 
 public:
     //constructor por omisión, pone los siguientes valores por default
@@ -19,6 +22,8 @@ public:
         rodada = 0;
         precio = 0;
         peso = 0;
+        horquilla = 0;
+        plato = 0;
     }
     //constructor con parametros
     Bicicleta(string tipo_b, string marca_b, string color_b, float rodada_b, float precio_b,float peso_b){
@@ -48,6 +53,13 @@ public:
     float getPeso(){
         return peso;
     }
+    //getters propios
+    float getHorquilla(){
+        return horquilla;
+    }
+    float getPlato(){
+        return plato;
+    }
     //setters
     void setTipo(string tipo_bici){
         tipo = tipo_bici;
@@ -67,6 +79,13 @@ public:
     void setPeso(float peso_bici){
         peso = peso_bici;
     }
+    //setters propios
+    void setHorquilla(float horqui){
+        horquilla = horqui;
+    }
+    void setPlato(float plat){
+        plato = plat;
+    }
     //metodos adicionales
     void imprimir_datos(){
         cout<<endl;
@@ -77,5 +96,14 @@ public:
         cout<<"Rodada: "<< rodada <<endl;
         cout<<"Precio:"<< precio <<" pesos"<<endl;
         cout<<"Peso: "<< peso <<" gramos"<<endl;
+    }
+    void avanzar(){
+        cout<<"Avanzando";
+    }
+    void frenar(){
+        cout<<"Frenando";
+    }
+    void girar(float angulo){
+        cout<<"Girando "<<angulo<<" grados";
     }
 };

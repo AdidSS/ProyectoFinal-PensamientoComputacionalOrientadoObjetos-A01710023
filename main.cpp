@@ -2,9 +2,14 @@
 #include "Bicicleta.h"
 #include "Casco.h"
 #include "Lampara.h"
+#include "Articulo.h"
+#include "Cuadro.h"
+#include "Rueda.h"
+#include "Pedal.h"
 using namespace std;
 
 int main() {
+    //El programa aun no cuenta con herencia, agregacion o composicion en el programa, solo en el diagrama. Se añaden las clases modeladas pero aun no se relacionan como se tiene establecido en el UML
     //Bici
     Bicicleta biciMTB;
     cout<<"Valores inciales"<<endl;
@@ -81,5 +86,45 @@ int main() {
     // lampara con parametros
     Lampara lamparaRoja("juego", "Focus", "rojo", 6, 3.4, 500, 1200.20);
     lamparaRoja.imprimir_datos();
+
+    //Creacion objetos nuevas clases
+    Articulo nuevoArticulo;
+    nuevoArticulo.setTipo("Bicicleta de ruta");
+    nuevoArticulo.imprimir_datos();
+
+    Cuadro cuadroAluminio;
+    cuadroAluminio.setMaterial("Aluminio");
+    cuadroAluminio.setTallaTam(60);
+    cout<< cuadroAluminio.getMaterial()<<endl;
+    cout<< cuadroAluminio.getTallaTam()<<endl;
+
+    Rueda miNuevaRueda;
+    miNuevaRueda.setRodada(29);
+    miNuevaRueda.setMarca("Michelin");
+    cout<<miNuevaRueda.getRodada()<<endl;
+    cout<<miNuevaRueda.getMarca()<<endl;
+
+    Pedal pedal;
+    pedal.setMaterial("fibra de carbono");
+    pedal.setMarca("Shimano");
+    cout<<pedal.getMarca()<<endl;
+    cout<<pedal.getMaterial()<<endl;
+
+    //Prueba metodos pedal
+    pedal.pedalear();
+    cout<<endl;
+    //Prueba metodos lampara
+    lamparaRoja.encender();
+    cout<<endl;
+    lamparaRoja.apagar();
+    cout<<endl;
+
+    //Pruebas metodos bicicleta
+    miBici.avanzar();
+    cout<<endl;
+    miBici.frenar();
+    cout<<endl;
+    miBici.girar(45);
+
     return 0;
 }
