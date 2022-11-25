@@ -2,19 +2,21 @@
 #include <string>
 using namespace std;
 class Articulo{
-private:
+protected:
     string tipo;
     string marca;
     string color;
     float precio;
     float peso;
 public:
-    Articulo(){
-        tipo = "";
-        marca = "";
-        color = "";
-        precio = 0;
-        peso = 0;
+    //Prueba de este constructor por omision
+    Articulo();
+    Articulo(string ti, string mar, string col, float prize, float w){
+        tipo = ti;
+        marca = mar;
+        color = col;
+        precio = prize;
+        peso = w;
     }
 
     string getTipo(){
@@ -43,7 +45,7 @@ public:
     }
     void imprimir_datos(){
         cout<<endl;
-        cout<<"Bicicleta "<<endl;
+        cout<<"Articulo "<<endl;
         cout<<"Tipo: "<< tipo <<endl;
         cout<<"Marca: "<< marca <<endl;
         cout<<"Color: "<< color <<endl;

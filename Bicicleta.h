@@ -1,109 +1,64 @@
 #include <iostream>
 #include <string>
+#include "Articulo.h"
+#include "Cuadro.h"
+#include "Rueda.h"
+#include "Pedal.h"
 using namespace std;
-class Bicicleta{
-private://Atributos estos son heredados pero aun no se aplica la herencia en el codigo
-    string tipo;
-    string marca;
-    string color;
-    float rodada;
-    float precio;
-    float peso;
+class Bicicleta : public Articulo{
+private:
+    //Atributos de otras clases (agregacion)
+    Rueda ruedaDelantera;
+    Rueda ruedaTrasera;
+    Pedal pedalDer;
+    Pedal pedalIzq;
+    //Composicion
+    Cuadro cuadroBici;
     //Atributos propios de clase bici
-    float horquilla;
-    float plato;
+    int cambios;
 
 public:
-    //constructor por omisión, pone los siguientes valores por default
-    Bicicleta(){
-        tipo = "";
-        marca = "";
-        color = "";
-        rodada = 0;
-        precio = 0;
-        peso = 0;
-        horquilla = 0;
-        plato = 0;
-    }
-    //constructor con parametros
-    Bicicleta(string tipo_b, string marca_b, string color_b, float rodada_b, float precio_b,float peso_b){
-        tipo = tipo_b;
-        marca = marca_b;
-        color = color_b;
-        rodada = rodada_b;
-        precio = precio_b;
-        peso = peso_b;
-    }
-    //getters
-    string getTipo(){
-        return tipo;
-    }
-    string getMarca(){
-        return marca;
-    }
-    string getColor(){
-        return color;
-    }
-    float getRodada(){
-        return rodada;
-    }
-    float getPrecio(){
-        return precio;
-    }
-    float getPeso(){
-        return peso;
+    //constructor con parametros + herencia
+    Bicicleta(string tip, string marc, string colo, float prize, float w,int cambio, Rueda ruedaD, Rueda ruedaT, Pedal pedalD, Pedal pedalI):Articulo(tip, marc, colo, prize, w){
+        Cuadro cuadro;
+        cuadro.setMaterial("Aluminio");
+        cuadroBici = cuadro;
+        ruedaDelantera = ruedaD;
+        ruedaTrasera = ruedaT;
+        pedalDer = pedalD;
+        pedalIzq = pedalI;
+        cambios = cambio;
     }
     //getters propios
-    float getHorquilla(){
-        return horquilla;
+    int getCambios(){
+        return cambios;
     }
-    float getPlato(){
-        return plato;
-    }
-    //setters
-    void setTipo(string tipo_bici){
-        tipo = tipo_bici;
-    }
-    void setMarca(string marca_bici){
-        marca = marca_bici;
-    }
-    void setColor(string color_bici){
-        color = color_bici;
-    }
-    void setRodada(float rodada_bici){
-        rodada = rodada_bici;
-    }
-    void setPrecio(float precio_bici){
-        precio = precio_bici;
-    }
-    void setPeso(float peso_bici){
-        peso = peso_bici;
-    }
-    //setters propios
-    void setHorquilla(float horqui){
-        horquilla = horqui;
-    }
-    void setPlato(float plat){
-        plato = plat;
+    void setCambios(int cambio){
+        cambios = cambio;
     }
     //metodos adicionales
-    void imprimir_datos(){
-        cout<<endl;
-        cout<<"Bicicleta "<<endl;
-        cout<<"Tipo: "<< tipo <<endl;
-        cout<<"Marca: "<< marca <<endl;
-        cout<<"Color: "<< color <<endl;
-        cout<<"Rodada: "<< rodada <<endl;
-        cout<<"Precio:"<< precio <<" pesos"<<endl;
-        cout<<"Peso: "<< peso <<" gramos"<<endl;
-    }
     void avanzar(){
         cout<<"Avanzando";
+        cout<<endl;
     }
     void frenar(){
         cout<<"Frenando";
+        cout<<endl;
     }
     void girar(float angulo){
         cout<<"Girando "<<angulo<<" grados";
+        cout<<endl;
+    }
+    void imprimir_datos(){
+        cout<<endl;
+        cout<<"Bicicleta" << endl;
+        cout<< "Tipo: "<< tipo <<endl;
+        cout<< "Marca: "<< marca <<endl;
+        cout<< "Color: "<< color <<endl;
+        cout << "Precio: "<< precio <<" pesos"<<endl;
+        cout << "Peso: "<< peso <<" gramos"<<endl;
+        cout<< "Rodada: "<<ruedaTrasera.getRodada()<<endl;
+        cout<<"Pedales: "<<pedalDer.getMarca()<<endl;
+        cout<<"Velocidades: "<<cambios<<endl;
     }
 };
