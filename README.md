@@ -6,3 +6,5 @@ El programa esta pensado para que el vendedor o administrador de la tienda sea e
 :)
 
 En este segundo avance se agrega el diagrama de clases UML y se va modificando el codigo para adaptarse al modelado. Se agregan las clases cuadro, pedal y rueda, que conforman a la clase Bicicleta. Se crea la clase Articulo que servirá como clase padre para las primeras 3 clases creadas (bicicleta, casco y lampara).
+
+En este tercer avance implementamos las relaciones de herencia, agregacion y composicion descritas en el UML en nuestro código, se adaptó tambien el diagrama para que se ajustara al proyecto, pues me di cuenta que algunos atributos eran irrelevantes. Por último queda en trabajo el método imprimirDatos, pues todas las clases lo necesitan pero deben de tener una parte en común y agregar lo propio de cada clase, eso queda en desarrollo. Gracias
