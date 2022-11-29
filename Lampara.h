@@ -11,7 +11,7 @@ private:
     bool encendido;
 public:
     //constructor con parametros
-    Lampara( string marc, string colo, float prize, float w, float duration, float carga, float lumen):Articulo("Juego", marc, colo, prize, w){
+    Lampara( string marc, string colo, float prize, float w, float duration, float carga, float lumen):Articulo("Juego de lamparas", marc, colo, prize, w){
         duracion = duration;
         tiempo_carga = carga;
         lumens = lumen;
@@ -37,17 +37,12 @@ public:
     void setLumens(float lumens_lamp){
         lumens = lumens_lamp;
     }
-    //metodos adicionales
+    //Se llama el metodo virtual de articulo y se complementa imprimiendo los atributos propios
     void imprimir_datos(){
-        cout<<endl;
-        cout<<"Lámpara"<<endl;
-        cout<<"Tipo: "<< tipo <<endl;
-        cout<<"Marca: "<< marca <<endl;
-        cout<<"Color: "<< color <<endl;
+        Articulo::imprimir_datos();
         cout<<"Duracion (tiempo de uso): "<< duracion <<" horas"<<endl;
         cout<<"Tiempo de carga: "<< tiempo_carga <<" horas"<<endl;
         cout<<"Lumens: "<< lumens <<" lumens"<<endl;
-        cout<<"Precio: "<< precio <<" pesos"<<endl;
     }
     void encender(){
         encendido = true;

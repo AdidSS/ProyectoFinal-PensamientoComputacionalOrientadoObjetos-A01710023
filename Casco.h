@@ -6,7 +6,7 @@ private: //atributos casco
     string talla;
 public:
     //Constructor con parametros, viene por default la marca principal de la tienda y la talla de estos cascos
-    Casco(string colo, float prize, float w):Articulo("Ciudad", "Wito", colo, prize, w){
+    Casco(string colo, float prize, float w):Articulo("Casco Ciudad", "Wito", colo, prize, w){
         talla = "Unitalla";
     }
     //getters
@@ -18,14 +18,8 @@ public:
         talla = talla_casco;
     }
     //metodos adicionales
-    void imprimir_datos(){
-        cout<<endl;
-        cout<<"Casco" << endl;
-        cout<< "Tipo: "<< tipo <<endl;
-        cout<< "Marca: "<< marca <<endl;
-        cout<< "Color: "<< color <<endl;
+    void imprimir_datos(){//Se llama el metodo virtual de articulo y se complementa imprimiendo los atributos propios
+        Articulo::imprimir_datos();
         cout << "Talla: "<< talla <<endl;
-        cout << "Precio: "<< precio <<" pesos"<<endl;
-        cout << "Peso: "<< peso <<" gramos"<<endl;
     }
 };

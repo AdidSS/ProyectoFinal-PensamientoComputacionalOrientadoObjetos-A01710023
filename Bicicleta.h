@@ -49,14 +49,8 @@ public:
         cout<<"Girando "<<angulo<<" grados";
         cout<<endl;
     }
-    void imprimir_datos(){
-        cout<<endl;
-        cout<<"Bicicleta" << endl;
-        cout<< "Tipo: "<< tipo <<endl;
-        cout<< "Marca: "<< marca <<endl;
-        cout<< "Color: "<< color <<endl;
-        cout << "Precio: "<< precio <<" pesos"<<endl;
-        cout << "Peso: "<< peso <<" gramos"<<endl;
+    void imprimir_datos(){ //Se llama el metodo virtual de articulo y se complementa imprimiendo los atributos propios
+        Articulo::imprimir_datos();
         cout<< "Rodada: "<<ruedaTrasera.getRodada()<<endl;
         cout<<"Pedales: "<<pedalDer.getMarca()<<endl;
         cout<<"Velocidades: "<<cambios<<endl;

@@ -43,7 +43,7 @@ public:
     void setColor(string color){
         this->color = color;
     }
-    void imprimir_datos(){
+    virtual void imprimir_datos(){ //Metodo abstracto/virtual que se usará en las clases hijas
         cout<<endl;
         cout<<"Articulo "<<endl;
         cout<<"Tipo: "<< tipo <<endl;
