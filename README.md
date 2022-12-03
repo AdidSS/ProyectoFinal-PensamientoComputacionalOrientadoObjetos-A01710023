@@ -14,9 +14,9 @@ Se implementa el método abstracto imprimirDatos() en la clase padre Articulo, p
 # CORRECIONES
 
 ---UML--
-Se añaden los constructores en los métodos
-Se modifica el Diagrama UML anotando correctamente los parámetros de los métodos de la forma nombre:tipoDato
-Se escribe de forma apropiada la clase Articulo. Se escribe en cursiva ya que es una clase abstracta, al igual que su método abstracto imprimirDatos()
+Se añaden los constructores en los métodos.
+Se modifica el Diagrama UML anotando correctamente los parámetros de los métodos de la forma nombre:tipoDato.
+Se escribe de forma apropiada la clase Articulo. Se escribe en cursiva ya que es una clase abstracta, al igual que su método abstracto imprimirDatos().
 Se anota el tipo de dato que recibe el setRodada, el setMarca de Pedal.
-Se modifica el UML para que sea congruente con el código (mismo nombre de variables, tipos de datos, nombres de métodos)
+Se modifica el UML para que sea congruente con el código (mismo nombre de variables, tipos de datos, nombres de métodos).
 
