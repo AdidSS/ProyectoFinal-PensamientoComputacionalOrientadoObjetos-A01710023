@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 class Articulo{
-    private:
+    protected:
         //atributos
         string tipo;
         string marca;
