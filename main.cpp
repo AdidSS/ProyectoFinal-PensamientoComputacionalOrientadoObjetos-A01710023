@@ -7,6 +7,7 @@ using namespace std;
 int main() {
     //El programa ahora cuenta con agregacion y herencia, se crea el metodo abstracto imprimirDatos()
     //imprimirDatos() se usará en cada clase para mostrar los atributos de articulo y agregar los propios
+
     //Creacion objeto tipo Casco
     Casco casco("rojo", 34, 34.3);
     casco.imprimir_datos();
@@ -35,9 +36,10 @@ int main() {
     ruedaChica.setRodada(23);
     //Construccion objeto bici
     Bicicleta miBiciMTB(" Bicicleta Montaña", "Alubike", "Rojo", 8000, 14000,24,ruedaGrande,ruedaGrande,miPedal,miPedal);
-    miBiciMTB.imprimir_datos();
+    miBiciMTB.imprimir_datos();//Se utiliza el método virtual
     cout<<endl;
-    miPedal.pedalear();//Prueba metodos pedal y bici
+    //Prueba metodos pedal y bici
+    miPedal.pedalear();
     miBiciMTB.avanzar();
     miBiciMTB.frenar();
     miBiciMTB.girar(45);

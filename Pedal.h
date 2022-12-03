@@ -2,20 +2,24 @@
 #include <string>
 using namespace std;
 class Pedal{
-private:
-    string marca;
-public:
-    Pedal(){
-        marca = "";
-    }
-    string getMarca(){
-        return marca;
-    }
-    void setMarca(string mar){
-        marca = mar;
-    }
-    void pedalear(){
-        cout<< "Pedaleando";
-        cout<<endl;
-    }
+    private:
+        string marca;//Atributos
+    public:
+        //constructor
+        Pedal(){
+            marca = "";
+        }
+        //getter
+        string getMarca(){
+            return marca;
+        }
+        //setter
+        void setMarca(string mar){
+            marca = mar;
+        }
+        //metodo pedal
+        void pedalear(){
+            cout<< "Pedaleando";
+            cout<<endl;
+        }
 };
