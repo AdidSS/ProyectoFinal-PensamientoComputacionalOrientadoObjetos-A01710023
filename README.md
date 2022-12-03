@@ -20,3 +20,6 @@ Se escribe de forma apropiada la clase Articulo. Se escribe en cursiva ya que es
 Se anota el tipo de dato que recibe el setRodada, el setMarca de Pedal.
 Se modifica el UML para que sea congruente con el código (mismo nombre de variables, tipos de datos, nombres de métodos).
 
+---Código---
+Se realizan las sangrías correspondientes para alinear correctamente el código, en específico los private y public de cada clase.
+Se documenta el código con más comentarios.
