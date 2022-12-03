@@ -10,3 +10,13 @@ En este segundo avance se agrega el diagrama de clases UML y se va modificando e
 En este tercer avance implementamos las relaciones de herencia, agregacion y composicion descritas en el UML en nuestro código, se adaptó tambien el diagrama para que se ajustara al proyecto, pues me di cuenta que algunos atributos eran irrelevantes. 
 Actualización Avance 3: 
 Se implementa el método abstracto imprimirDatos() en la clase padre Articulo, para que cada clase pueda realizar sus acciones particulares (implementar la logica dentro de las clases hijas), en este proyecto imprimirDatos() imprime los atributos de articulo (los atributos en comun de las suclases) pero dentro de cada clase se modifica este metodo para imprimir sus atributos propios + los compartidos.
+
+# CORRECIONES
+
+---UML--
+Se añaden los constructores en los métodos
+Se modifica el Diagrama UML anotando correctamente los parámetros de los métodos de la forma nombre:tipoDato
+Se escribe de forma apropiada la clase Articulo. Se escribe en cursiva ya que es una clase abstracta, al igual que su método abstracto imprimirDatos()
+Se anota el tipo de dato que recibe el setRodada, el setMarca de Pedal.
+Se modifica el UML para que sea congruente con el código (mismo nombre de variables, tipos de datos, nombres de métodos)
+
