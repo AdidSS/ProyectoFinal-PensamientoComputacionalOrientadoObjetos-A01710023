@@ -23,3 +23,22 @@ Se modifica el UML para que sea congruente con el código (mismo nombre de varia
 ---Código---
 Se realizan las sangrías correspondientes para alinear correctamente el código, en específico los private y public de cada clase.
 Se documenta el código con más comentarios.
+
+# SUB-COMPETENCIAS
+Toma de decisiones SICT0302A:
+Decido realizar relaciones de herencia y composición en mi diagrama UML y lo implemento en mi código
+
+Implementa SICT0303A:
+Se crean las clases de acuerdo al diagrama UML. En los archivos de Bicicleta, Casco y Lampara se implementa la Herencia de la clase padre Articulo. Se implementa una relación de composición en la clase Bicicleta, esta clase cuenta con atributos de tipo Cuadro, Rueda y Pedal.
+Se utiliza la clase abstracta de Articulo para poner todos los atributos y métodos que tienen en comun las clases de Bicicleta, Casco y Lampara. Esto es útil ya que en primera nos ayuda a reducir código y podemos utilizar la herencia para trabajar con estas clases.
+
+Estándares   SICT0401A:
+Mi repositorio cuenta con los requisitos, mi código tiene sangrías adecuadas, está documentado, cumple con el estilo y los nombres de los atributos de cada clase son claras.
+
+Tecnologías  SEG0702A: 
+Se utilizó github para el control de versiones. Durante el proyecto se guardaron correctamente los archivos de mi código mediante los commits
+
+
+
+
+
